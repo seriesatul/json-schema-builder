@@ -1,4 +1,4 @@
-// src/components/SchemaBuilder.tsx
+
 
 import { useFieldArray, useFormContext } from 'react-hook-form';
 import { Button } from 'antd';

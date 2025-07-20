@@ -1,5 +1,5 @@
-// src/App.tsx
-import React from 'react';
+
+
 import { useForm, FormProvider, useWatch, useFormContext } from 'react-hook-form';
 import { Tabs, Layout, Typography, Card } from 'antd';
 import SchemaBuilder from './components/SchemaBuilder';
@@ -9,12 +9,12 @@ import './App.css';
 const { Header, Content } = Layout;
 const { Title } = Typography;
 
-// This interface defines the shape of our entire form state
+
 interface FormValues {
   schema: SchemaField[];
 }
 
-// Helper function to recursively generate the final JSON object
+
 const generateJsonFromSchema = (fields: SchemaField[]): Record<string, any> => {
   const result: Record<string, any> = {};
 
@@ -66,10 +66,10 @@ const JsonPreview = () => {
 
 
 function App() {
-  // Initialize react-hook-form
+  
   const methods = useForm<FormValues>({
     defaultValues: {
-      schema: [], // Start with an empty schema
+      schema: [], 
     },
   });
 
@@ -87,7 +87,7 @@ function App() {
   ];
 
   return (
-    // FormProvider makes the form methods available to all nested components
+   
     <FormProvider {...methods}>
       <Layout className="layout">
         <Header>

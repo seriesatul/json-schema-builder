@@ -1,5 +1,4 @@
-// src/components/FieldRow.tsx
-import React from 'react';
+
 import { useFormContext, useFieldArray, Controller, useWatch } from 'react-hook-form';
 import { Input, Select, Button, Space } from 'antd';
 import { DeleteOutlined, PlusOutlined } from '@ant-design/icons';
@@ -22,7 +21,7 @@ const FieldRow: React.FC<FieldRowProps> = ({ nestingLevel, path, index, onRemove
     name: `${path}.type`,
   });
 
-  // useFieldArray for nested children
+  
   const { fields: childFields, append: appendChild, remove: removeChild } = useFieldArray({
     control,
     name: `${path}.children`,
