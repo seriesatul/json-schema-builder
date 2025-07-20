@@ -1,0 +1,19 @@
+/* src/App.css */
+body {
+  background-color: #f0f2f5;
+}
+
+.site-layout-content {
+  background: #fff;
+  padding: 24px;
+  min-height: 80vh;
+}
+
+pre {
+  background-color: #fafafa;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 16px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
